@@ -1,7 +1,3 @@
-<?php include("dbConn.php");?>
-<?php
-    $db=new dbConn();
-?>
 <html>
 <head>
     <title>İl ilçe PDO</title>
@@ -43,10 +39,7 @@
 
 <script>
     $(document).ready(function(){
-
         ajaxFunc("bolge", "", "#bolge");
-
-
 
         $("#bolge").on("change", function(){
 
@@ -64,7 +57,6 @@
 
         });
 
-
         function ajaxFunc(action, name, id ){
             $.ajax({
                 url: "ajax.php",
@@ -78,8 +70,6 @@
                     });
                 }});
         }
-
-
     });
 </script>
 </body>
